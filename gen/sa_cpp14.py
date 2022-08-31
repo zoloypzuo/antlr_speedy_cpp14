@@ -89,7 +89,7 @@ def parse(stream:InputStream, entry_rule_name:str, sa_err_listener:SA_ErrorListe
 #-------------------------------------------------------------------------------
 
 try:
-    import sa_cpp14_cpp_parser
+    from . import sa_cpp14_cpp_parser
 except ImportError:
     USE_CPP_IMPLEMENTATION = False
 
